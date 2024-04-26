@@ -17,6 +17,12 @@ Select the desired output format from the dropdown menu.
 Click the "Convert" button to initiate the conversion process.
 Once the conversion is complete, download the converted file.
 
+Changes Required to Use the Project:
+
+Obtain a ConvertAPI API key by signing up for an account on the ConvertAPI website.
+Once you have the API key, replace the placeholder key in the application.py with your actual API key.
+Ensure that the ConvertAPI key is securely stored and not exposed in the project's source code or shared publicly.
+
 
 GETTING STARTED:
 
