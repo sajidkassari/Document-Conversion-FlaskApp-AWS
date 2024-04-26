@@ -22,7 +22,7 @@ GETTING STARTED:
 
 Clone the repository to your local machine.
 Install the required dependencies listed in the requirements.txt file.
-Run the Flask application locally using the command python app.py.
+Run the Flask application locally using the command python application.py
 Access the web application in your browser at http://localhost:5000.
 
 CONTRIBUTING:
