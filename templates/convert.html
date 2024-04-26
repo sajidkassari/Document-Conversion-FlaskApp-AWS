@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert {{ filename }}</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 h-screen flex flex-col justify-center items-center">
+    <h1 class="text-3xl font-bold mb-8">Convert {{ filename }} to </h1>
+    <form action="/process/{{ filename }}" method="POST" class="flex flex-col items-center">
+        <select name="output_format" class="bg-white border border-gray-300 rounded-lg p-2 mb-4">
+            {% for format in supported_conversions %}
+                <option value="{{ format }}">{{ format }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit" class="bg-pink-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg">Convert</button>
+    </form>
+    <a href="/" class="bg-gray-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg mt-8">Back Home</a>
+</body>
+</html>
