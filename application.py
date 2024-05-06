@@ -5,6 +5,7 @@ import convertapi
 application = Flask(__name__)
 application.config['SECRET_KEY'] = 'your-secret-key'  # Secret key for session management
 convertapi.api_secret = 'your-secret-key'  # Set ConvertAPI secret key
+#not putting my secret key for obvious reseasons
 
 # Define supported input and output file types
 SUPPORTED_FILE_TYPES = {
